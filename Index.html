@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Google It Vro</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#ffc1f1,#c8f7ff);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+
+/* bubbles */
+
+.bubble{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.5);
+
+    animation:float 8s infinite;
+
+    z-index:-1;
+
+}
+
+
+
+.b1{
+
+    width:150px;
+    height:150px;
+    top:10%;
+    left:10%;
+
+}
+
+
+.b2{
+
+    width:100px;
+    height:100px;
+    right:10%;
+    bottom:20%;
+
+}
+
+
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-40px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* main card */
+
+#div{
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.6);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+    transition:.4s;
+
+}
+
+
+
+#div:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/* heading */
+
+h1{
+
+    color:#008cff;
+
+    font-size:40px;
+
+    text-shadow:0 0 10px white;
+
+}
+
+
+
+h3{
+
+    color:#555;
+
+    margin-top:10px;
+
+}
+
+
+
+/* image */
+
+
+#photo{
+
+    width:250px;
+
+    border-radius:50%;
+
+    margin-top:25px;
+
+    border:5px solid white;
+
+    transition:.5s;
+
+}
+
+
+
+#photo:hover{
+
+    transform:scale(1.1) rotate(5deg);
+
+    box-shadow:0 0 25px #ff4fa3;
+
+}
+
+
+
+/* button */
+
+
+button{
+
+    margin-top:25px;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#ff4fa3;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#008cff;
+
+    transform:scale(1.1);
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="bubble b1"></div>
+
+<div class="bubble b2"></div>
+
+
+
+<div id="div">
+
+<h1>GOOGLE IT VRO!</h1>
+
+<h3>Search • Explore • Create ✨</h3>
+
+
+<img 
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAguLowy7LnP7jpVX9YC_WuDQttgUL_GK7xNgJfBSbHvp7AFg_od_oTXs&s=10"
+alt="meow"
+id="photo">
+
+
+<br>
+
+
+<button onclick="window.location.href='Index.html'">
+
+Back to Art 🎨
+
+</button>
+
+
+</div>
+
+
+</body>
+
+</html>
